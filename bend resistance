@@ -1,0 +1,7 @@
+  float flexV = flexADC * VCC / 1023.0;
+  float flexR = RDIV * (VCC / flexV - 1.0);
+  Serial.println("Resistance: " + String(flexR) + " ohms");
+  
+  float angle = map(flexR, STRAIGHTRESISTANCE, BENDRESISTANCE,
+                   0, 90.0);
+  Serial.println("Bend: " + String(angle) + " degrees");
