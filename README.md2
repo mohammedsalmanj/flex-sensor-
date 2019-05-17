@@ -4,7 +4,7 @@ code for angle measurement
 const int FLEXPIN = A0; 
 const float VCC = 4.98;
 const float RDIV = 10000.0;
-const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+const int rs = 12, en = 11, d5 = 5, d4 = 4, d7 = 3, d6 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 const float STRAIGHTRESISTANCE=59591.0; 
 const float BENDRESISTANCE = 177444.0; 
